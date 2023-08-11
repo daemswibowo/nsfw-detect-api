@@ -17,6 +17,10 @@ This is a simple todo app using clean architecture with fastapi.
 ### Architecture
 Controller > Service > Repository > Data Source
 
+## Dependency Injection
+
+The container of dependency injection is located at `./app/di.py`. You can register your dependency there.
+
 # Development
 
 Copy `.env.example` to `.env` then install requirements:
