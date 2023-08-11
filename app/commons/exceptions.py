@@ -33,3 +33,47 @@ class ValidationError(HTTPException):
             detail,
             headers,
         )
+
+
+class ForbiddenError(HTTPException):
+    def __init__(
+        self, detail: Any = None, headers: Optional[Dict[str, Any]] = None
+    ) -> None:
+        super().__init__(
+            status.HTTP_403_FORBIDDEN,
+            detail,
+            headers,
+        )
+
+
+class BadRequestError(HTTPException):
+    def __init__(
+        self, detail: Any = None, headers: Optional[Dict[str, Any]] = None
+    ) -> None:
+        super().__init__(
+            status.HTTP_400_BAD_REQUEST,
+            detail,
+            headers,
+        )
+
+
+class InternalServerError(HTTPException):
+    def __init__(
+        self, detail: Any = None, headers: Optional[Dict[str, Any]] = None
+    ) -> None:
+        super().__init__(
+            status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail,
+            headers,
+        )
+
+
+class ServiceUnavailableError(HTTPException):
+    def __init__(
+        self, detail: Any = None, headers: Optional[Dict[str, Any]] = None
+    ) -> None:
+        super().__init__(
+            status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail,
+            headers,
+        )
