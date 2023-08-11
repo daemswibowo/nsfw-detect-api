@@ -7,7 +7,15 @@ Fastapi Clean Architecture boilerplate.
 - [Pipenv](https://pipenv.pypa.io/en/latest/) for managing package / requirements
 
 ## Docs
-`Docs url will be put in here in advance`
+
+This is a simple todo app using clean architecture with fastapi.
+
+### Framework
+- [Fastapi](https://fastapi.tiangolo.com/)
+- [Dependency Injector](https://python-dependency-injector.ets-labs.org/)
+
+### Architecture
+Controller > Service > Repository > Data Source
 
 # Development
 
